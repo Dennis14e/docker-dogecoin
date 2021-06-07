@@ -13,7 +13,7 @@ WORKDIR /opt
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y ca-certificates curl && \
+    apt-get install -y ca-certificates wget && \
     rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 COPY dl-dogecoin.sh .

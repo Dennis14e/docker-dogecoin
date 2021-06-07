@@ -22,6 +22,6 @@ case `uname -m` in
         exit 1
 esac
 
-curl -s "$archive" | tar -xvzf - -C /opt
+wget -O - "$archive" | tar -xvzf - -C /opt
 
 mv dogecoin-* dogecoin
