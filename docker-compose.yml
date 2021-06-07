@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  dogecoin:
+    image: dennis14e/dogecoin
+    # Use to limit resources
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: 0.5
+    #       memory: 1G
+    restart: unless-stopped
+    ports:
+      - 22556:22556
+    volumes:
+      - dogecoin_data:/opt/dogecoin-data
+    environment:
+      - TZ=Europe/Berlin
+
+# Use for IPv6
+# Requires IPv6-enabled Docker, see https://docs.docker.com/config/daemon/ipv6/
+# Replace subnet and gateway with your configuration
+# networks:
+#   default:
+#     enable_ipv6: true
+#     driver: bridge
+#     ipam:
+#       driver: default
+#       config:
+#         - subnet: fdc3:d8a8:9100::/48
+#           gateway: fdc3:d8a8:9100::1

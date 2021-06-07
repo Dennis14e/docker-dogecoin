@@ -1,1 +1,1 @@
-# docker-dogecoin
+# Docker Dogecoin Node
