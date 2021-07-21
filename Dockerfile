@@ -3,11 +3,6 @@ FROM debian:buster-slim AS builder
 # Arguments
 ARG DEBIAN_FRONTEND="noninteractive"
 
-# Labels
-LABEL maintainer="Dennis Neufeld <git@dneufeld.net>" \
-      version="1.14.3-1" \
-      description="Dogecoin Node"
-
 # Workdir
 WORKDIR /opt
 
@@ -29,7 +24,7 @@ ARG DEBIAN_FRONTEND="noninteractive"
 
 # Labels
 LABEL maintainer="Dennis Neufeld <git@dneufeld.net>" \
-      version="1.14.3-1" \
+      version="1.14.3-2" \
       description="Dogecoin Node"
 
 # Workdir
