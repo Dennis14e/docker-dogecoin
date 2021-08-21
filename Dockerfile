@@ -24,7 +24,7 @@ ARG DEBIAN_FRONTEND="noninteractive"
 
 # Labels
 LABEL maintainer="Dennis Neufeld <git@dneufeld.net>" \
-      version="1.14.3-2" \
+      version="1.14.4-1" \
       description="Dogecoin Node"
 
 # Workdir
