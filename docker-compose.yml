@@ -2,7 +2,7 @@ version: '3'
 
 services:
   dogecoin:
-    image: dennis14e/dogecoin
+    image: dennis14e/dogecoin:latest
     # Use to limit resources
     # deploy:
     #   resources:
