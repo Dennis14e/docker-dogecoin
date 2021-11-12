@@ -1,4 +1,4 @@
-FROM debian:buster-slim AS builder
+FROM debian:bullseye-slim AS builder
 
 # Arguments
 ARG DEBIAN_FRONTEND="noninteractive"
@@ -17,7 +17,7 @@ RUN chmod +x dl-dogecoin.sh && \
     ./dl-dogecoin.sh
 
 
-FROM debian:buster-slim AS release
+FROM debian:bullseye-slim AS release
 
 # Arguments
 ARG DEBIAN_FRONTEND="noninteractive"
