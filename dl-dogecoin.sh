@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-DOGECOIN_VERSION="1.14.5"
+DOGECOIN_VERSION="1.14.6"
 
 case `uname -m` in
     x86_64)
